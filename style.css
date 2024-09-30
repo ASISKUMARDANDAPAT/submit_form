@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(59, 57, 57), rgb(35, 35, 23), rgb(47, 48, 45));
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 590px;
+    width: 500px;
+    background-color: rgba(53, 49, 49, 0.792);
+    border-radius: 8px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px black;
+} 
+h1{
+    color: rgb(88, 225, 24);
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+input, select, button {
+    height: 40px;
+    width: 350px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+input{
+    outline: none;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+input, select {
+    margin-bottom: 6px;
+}
+
+
+button {
+    background-color: rgb(106, 204, 41);
+    margin-top: 8px;
+    color: rgb(247, 238, 238);
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background-color: rgb(127, 162, 57);
+    color: white;
+}
+select {
+    background-color: rgb(231, 217, 217);
+    color: rgb(13, 11, 11);
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 30px; /* Space for the custom arrow */
+    outline: none;
+    appearance: none; /* Hide default arrow */
+    background: rgb(231, 217, 217) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5"><polygon points="0,0 10,0 5,5" fill="rgb(13, 11, 11)"/></svg>') no-repeat right 10px center;
+    background-size: 10px;
+}
+
+
